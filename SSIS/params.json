@@ -1,0 +1,66 @@
+{
+    "environments" : [
+	    {
+	        "connections": [
+	            {
+	                "connectionName": "Destination ProvDir",
+	                "connectionString": "Data Source=tst-tsh-portal-sqlserver.database.windows.net,1433;User ID=tssdevadmin;Initial Catalog=tst-tsh-providerdirectory-db;Provider=SQLNCLI11.1;Auto Translate=False;"
+				},
+				{
+	                "connectionName": "Staging ProvDir",
+	                "connectionString": "Data Source=tsaisdev;Initial Catalog=ProviderDirectoryStaging;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;"
+				}
+	        ],
+	        "environment": "Test",
+	        "variables": [
+	            {
+	                "variableName": "ErrorMailRecipient",
+	                "variableValue": "jaxelr@sssadvantage.com"
+	            },
+	            {
+	                "variableName": "LoggerEndpoint",
+	                "variableValue": "http://ahmiissrvtest/jobexecutionlogger/soap11"
+	            },
+	            {
+	                "variableName": "ErrorReportDirectory",
+	                "variableValue": "\\\\tsaisdev\\Share\\"
+	            },
+	            {
+	                "variableName": "VendorInputDirectory",
+	                "variableValue": "\\\\tsaisdev\\Share\\PD"
+	            }
+	        ]
+	    },
+		{
+	        "connections": [
+	            {
+	                "connectionName": "Destination ProvDir",
+	                "connectionString": "Data Source=qa-tsh-portal-sqlserver.database.windows.net,1433;User ID=tssdevadmin;Initial Catalog=qa-tsh-providerdirectory-db;Provider=SQLNCLI11.1;Auto Translate=False;"
+				},
+				{
+	                "connectionName": "Staging ProvDir",
+	                "connectionString": "Data Source=tsaisqa;Initial Catalog=ProviderDirectoryStaging;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;"
+				}
+	        ],
+	        "environment": "QA",
+	        "variables": [
+	            {
+	                "variableName": "ErrorMailRecipient",
+	                "variableValue": "jaxelr@sssadvantage.com"
+	            },
+	            {
+	                "variableName": "LoggerEndpoint",
+	                "variableValue": "http://ahmiissrvqa:81/soap11"
+	            },
+	            {
+	                "variableName": "ErrorReportDirectory",
+	                "variableValue": "\\\\tsaisqa\\Test\\"
+	            },
+	            {
+	                "variableName": "VendorInputDirectory",
+	                "variableValue": "\\\\tsaisqa\\Test\\PD\\"
+	            }
+	        ]
+	    }
+	]
+}
