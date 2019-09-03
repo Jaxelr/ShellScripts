@@ -1,0 +1,33 @@
+# home machine scripts
+
+cinst 1password 
+cinst 7zip 
+cinst Atom
+cinst autohotkey.portable 
+cinst autoit.commandline 
+cinst beyondcompare 
+cinst chocolatey
+cinst chocolatey-core.extension
+cinst clipx 
+cinst docker
+cinst DotNet4.0 
+cinst dropbox
+cinst git
+cinst git.install
+cinst Gow
+cinst ilspy 
+cinst launchy 
+cinst lockhunter 
+cinst nodejs
+cinst nodejs.install
+cinst npm 
+cinst NuGet.CommandLine
+cinst paint.net
+cinst psake
+cinst sourcetree 
+cinst spotify 
+cinst SQLite
+cinst sqlite.shell
+cinst sublimetext3 
+cinst virtualbox
+cinst vlc 
