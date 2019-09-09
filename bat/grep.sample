@@ -1,0 +1,1 @@
+grep -n -C 40 -e "{What im looking for}" --include=*.{extension} > {Path} > output.txt
