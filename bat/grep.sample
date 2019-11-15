@@ -1,1 +1,5 @@
-grep -n -C 40 -e "{What im looking for}" --include=*.{extension} > {Path} > output.txt
+//grep for a text on an extension outputting to a path
+grep -n -C 40 -e "{What im looking for}" --include=*.{extension} > {Path}\output.txt
+
+//grep for text in a folder of files.
+grep -Rwi {directory} -e '{What im looking for}'
