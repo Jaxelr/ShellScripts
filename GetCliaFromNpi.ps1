@@ -10,6 +10,10 @@ Param(
 )
 
 # This is incredibly client specific
+if (!(Test-Path $InputFile)) {
+    Write-Error -Message "The File $InputFile doesn't exists or the process doesn't have permissions to view it."
+    Exit
+}
 
 $lines = Get-Content $InputFile;
 $url = "https://npiprofile.com/npi/";
