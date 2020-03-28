@@ -4,19 +4,19 @@ Param(
     [Parameter(Mandatory=$True,Position=1)]
     [string]$InputFile,
 
-    # Input Path for the Processing Logic
+    # Output Path for the resulting comparison
     [Parameter(Mandatory=$True,Position=2)]
     [string]$OutputFile,
 
-    # Input Path for the Processing Logic
+    # Url to scrape for information
     [Parameter(Mandatory=$True,Position=3)]
     [string]$Url,
 
-    # Input Path for the Processing Logic
+    # HTML Tag to target
     [Parameter(Mandatory=$True,Position=4)]
     [string]$Tag,
 
-    # Input Path for the Processing Logic
+    # Wildcard to apply
     [Parameter(Mandatory=$True,Position=5)]
     [string]$Wildcard
 
