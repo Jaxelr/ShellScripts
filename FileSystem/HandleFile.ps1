@@ -9,6 +9,11 @@ Param(
     [string]$OutputFile
 )
 
+if (!(Test-Path $InputFile)) {
+    Write-Error -Message "The File $InputFile doesn't exists or the process doesn't have permissions to view it."
+    Exit
+}
+
 $Ids = @{}
 
 foreach($line in Get-Content $InputFile) {
