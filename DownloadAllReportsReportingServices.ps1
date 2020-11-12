@@ -3,7 +3,7 @@
 #This is also on github (https://github.com/Microsoft/ReportingServicesTools)
 
 #Declare SSRS URI
-$sourceRsUri = 'http://PSM-SRV-12/ReportServer/ReportService2010.asmx?wsdl'
+$sourceRsUri = '*.asmx?wsdl'
 
 #Select Your Destination Path
 $destination = 'C:\temp'
