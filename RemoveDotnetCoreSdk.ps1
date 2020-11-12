@@ -4,8 +4,8 @@ $app = Get-WmiObject -Class Win32_Product | Where-Object {
 
 Write-Host $app.Name 
 Write-Host $app.IdentifyingNumber
-pushd $env:SYSTEMROOT\System32
+Push-Location $env:SYSTEMROOT\System32
 
-$app.identifyingnumber |% { Start-Process msiexec -wait -ArgumentList "/x $_" }
+$app.identifyingnumber | ForEach-Object { Start-Process msiexec -wait -ArgumentList "/x $_" }
 
-popd
+Pop-Location
