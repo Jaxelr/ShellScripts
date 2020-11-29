@@ -6,7 +6,6 @@ cinst adexplorer
 cinst asmspy 
 cinst autohotkey.portable 
 cinst conemu
-cinst cake-bootstrapper 
 cinst chocolatey 
 cinst chocolatey-core.extension 
 cinst chocolatey-windowsupdate.extension 
@@ -21,10 +20,11 @@ cinst dotnetcore-runtime.install
 cinst Filezilla
 cinst Firefox 
 cinst FiraCode
+cinst forticlientvpn
 cinst gpg4win
 cinst git 
 cinst gitextensions 
-cinst gitkraken 
+cinst git-fork 
 cinst Gow 
 cinst golang
 cinst ilspy 
@@ -53,7 +53,8 @@ cinst qttabbar
 cinst rdcman 
 cinst redis-64
 cinst ruby 
-cinst sourcetree 
+cinst rust
+cinst soapui
 cinst SQLite 
 cinst sublimetext3
 cinst vscode
