@@ -9,9 +9,10 @@ if (!(Test-Path $InputFile)) {
     Exit
 }
 
+# Change encoding as needed for <<-Encoding UTF8>>
 $content = Get-Content -Path $InputFile
 
-# Use `r`n if you want to split lines with CRLF instead of LF
+# Use `r`n or nothing if you want to split lines with CRLF instead of LF
 $content = $content -replace '"string"', 'string' -join "`n" 
 
 $content | Out-File $InputFile
