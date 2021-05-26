@@ -1,0 +1,1 @@
+iconv -f UTF-8 {{file.goes.here}} -o /dev/null
