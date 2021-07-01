@@ -14,16 +14,17 @@ Param(
 ## ## .\ZipFiles.ps1 -Source "C:\temp\*.csv" 
 
 if (!(Test-Path $Source)) {
-    Write-Error -Message "The path $Source doesn't exists or the process doesn't have permissions to view it."
+    Write-Host -Message "No records found on wildcard $Source, Check path. Could be a permission issue?!"
     Exit
 }
 
 $TempDestination = Split-Path $Source
 
-if ($Destination -ne $null -And (Test-Path $Destination)) {
+if ($Destination -ne "" -And (Test-Path $Destination)) {
     $MoveFlag = 1;
 }
 else {
+    Write-Host "Files will not be moved since Destination param is empty or invalid."
     $MoveFlag = 0;
 }
 
