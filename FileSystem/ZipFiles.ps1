@@ -14,7 +14,7 @@ Param(
 ## ## .\ZipFiles.ps1 -Source "C:\temp\*.csv" 
 
 if (!(Test-Path $Source)) {
-    Write-Host -Message "No records found on wildcard $Source, Check path. Could be a permission issue?!"
+    Write-Host -Message "No files found on wildcard $Source, Check path. Could be a permission issue?!"
     Exit
 }
 
