@@ -29,7 +29,7 @@ else {
 }
 
 foreach ($file in Get-ChildItem -Path $Source) {
-    $ZipPath = Join-Path -Path $TempDestination -ChildPath ((Split-Path $file -Leaf).Replace('csv', 'zip'))
+    $ZipPath = Join-Path -Path $TempDestination -ChildPath (-Join ((Split-Path $file -Leaf), '.zip'))
     Compress-Archive -Path $file -DestinationPath $ZipPath -Force
 
     if ($MoveFlag -eq 1) {
