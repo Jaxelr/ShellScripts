@@ -13,7 +13,7 @@ if (!(Test-Path $Source)) {
     Exit
 }
 
-foreach ($file in Get-ChildItem -Path $Source -Recurse) {
+foreach ($file in Get-ChildItem -Path $Source) {
     $Zip = Join-Path -Path (Split-Path $file) -ChildPath (-Join ((Split-Path $file -Leaf), '.zip'))
     Compress-Archive -Path $file -DestinationPath $Zip  -Force
     Remove-Item -Path $file
