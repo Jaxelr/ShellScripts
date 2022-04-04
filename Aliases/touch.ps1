@@ -1,13 +1,19 @@
 function Touch-File() {
     $fileName = $args[0]
-    # Check of the file exists
-    if (-not(Test-Path $fileName)) {
-        # It does not exist. Create it
-        New-Item -ItemType File -Name $fileName
+    # Check of the argument is not empty
+    if (!$fileName) {
+        Write-Error "First Argument must not be empty."
     }
     else {
-        #It exists. Update the timestamp
-        (Get-ChildItem $fileName).LastWriteTime = Get-Date
+        # Check if the file exists
+        if (-not(Test-Path $fileName)) {
+            # It does not exist. Create it
+            New-Item -ItemType File -Name $fileName
+        }
+        else {
+            #It exists. Update the timestamp
+            (Get-ChildItem $fileName).LastWriteTime = Get-Date
+        }
     }
 }
 
