@@ -1,0 +1,15 @@
+winget install -e --id Docker.DockerDesktop
+winget install -e --id Microsoft.VisualStudioCode
+winget install -e --id mcmilk.7zip-zstd
+winget install -e --id Fork.Fork
+winget install -e --id Rustlang.Rust.GNU
+winget install -e --id LINQPad.LINQPad.7
+winget install -e --id JanDeDobbeleer.OhMyPosh
+winget install -e --id Git.Git
+winget install -e --id Spotify.Spotify
+winget install -e --id VideoLAN.VLC
+winget install -e --id GoLang.Go
+winget install -e --id SublimeHQ.SublimeText.4
+winget install -e --id Insomnia.Insomnia
+winget install -e --id Mozilla.Firefox
+winget install -e --id Python.Python.3

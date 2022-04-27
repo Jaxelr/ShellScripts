@@ -2,16 +2,13 @@
 
 cinst 1password 
 cinst 7zip 
-cinst Atom
 cinst autohotkey.portable 
 cinst autoit.commandline 
 cinst beyondcompare 
 cinst codecov
 cinst chocolatey
 cinst chocolatey-core.extension
-cinst clipx 
 cinst docker
-cinst DotNet4.0 
 cinst dropbox
 cinst FiraCode
 cinst git
@@ -32,5 +29,4 @@ cinst spotify
 cinst SQLite
 cinst sqlite.shell
 cinst sublimetext3 
-cinst virtualbox
 cinst vlc 
