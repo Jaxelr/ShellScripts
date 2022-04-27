@@ -13,3 +13,8 @@ winget install -e --id SublimeHQ.SublimeText.4
 winget install -e --id Insomnia.Insomnia
 winget install -e --id Mozilla.Firefox
 winget install -e --id Python.Python.3
+winget install -e --id Microsoft.PowerToys
+winget install -e --id NuGetPackageExplorer.NuGetPackageExplorer
+winget install -e --id CrystalRich.LockHunter
+winget install -e --id Microsoft.WindowsTerminal
+winget install -e --id Microsoft.PowerShell
