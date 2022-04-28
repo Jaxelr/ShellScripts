@@ -18,3 +18,8 @@ winget install -e --id NuGetPackageExplorer.NuGetPackageExplorer
 winget install -e --id CrystalRich.LockHunter
 winget install -e --id Microsoft.WindowsTerminal
 winget install -e --id Microsoft.PowerShell
+winget install -e --id OpenJS.NodeJS.LTS
+winget install -e --id Microsoft.AzureDataStudio
+Install-Module posh-git -Scope CurrentUser
+Install-Module oh-my-posh -Scope CurrentUser
+# Install FiraCode
