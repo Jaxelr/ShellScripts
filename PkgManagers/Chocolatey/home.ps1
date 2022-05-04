@@ -28,5 +28,6 @@ cinst redis-64
 cinst spotify 
 cinst SQLite
 cinst sqlite.shell
-cinst sublimetext3 
-cinst vlc 
+cinst sublimetext3
+cinst vlc
+cinst oh-my-posh

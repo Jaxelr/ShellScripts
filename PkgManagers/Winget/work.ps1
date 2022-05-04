@@ -21,5 +21,6 @@ winget install -e --id Microsoft.PowerShell
 winget install -e --id OpenJS.NodeJS.LTS
 winget install -e --id Microsoft.AzureDataStudio
 Install-Module posh-git -Scope CurrentUser
-Install-Module oh-my-posh -Scope CurrentUser
+Install-Module Terminal-Icons -Scope CurrentUser
+Install-Module PsReadline -Scope CurrentUser
 # Install FiraCode
