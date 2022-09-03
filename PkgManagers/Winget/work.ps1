@@ -20,7 +20,10 @@ winget install -e --id Microsoft.WindowsTerminal
 winget install -e --id Microsoft.PowerShell
 winget install -e --id OpenJS.NodeJS.LTS
 winget install -e --id Microsoft.AzureDataStudio
+winget install -e --id Canonical.Ubuntu
+winget install -e --id Microsoft.AzureCosmosEmulator
+winget install -e --id Microsoft.VisualStudio.2022.Enterprise
 Install-Module posh-git -Scope CurrentUser
 Install-Module Terminal-Icons -Scope CurrentUser
 Install-Module PsReadline -Scope CurrentUser
-# Install FiraCode
+# Install FiraCode manually
