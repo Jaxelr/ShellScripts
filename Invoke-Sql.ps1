@@ -10,7 +10,7 @@ Param
     [Parameter(Mandatory=$True,Position=3)]
     [string]$OutputFile
 )
-# This requires that the following tools be installe
+# This requires the following tools 
 # https://docs.microsoft.com/en-us/sql/powershell/download-sql-server-ps-module?view=sql-server-ver15
 Invoke-Sqlcmd -Query $Query -ServerInstance $Server -QueryTimeout 30 # | Out-File -FilePath $OutputFile
 
