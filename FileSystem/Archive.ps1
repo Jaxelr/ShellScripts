@@ -1,6 +1,5 @@
 [CmdletBinding()]
 Param(
-    # Deployment Package Name (use same folder as powershell)
     [Parameter(Mandatory=$True,Position=1)]
     [string]$InputPath,
 
